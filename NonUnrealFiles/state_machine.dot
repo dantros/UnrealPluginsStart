@@ -1,0 +1,32 @@
+digraph G
+{
+    graph [fontname="Consolas" bgcolor="transparent"];
+    node [shape=circle fontname="Consolas" style=filled fillcolor="white" width=1 height=2];
+
+    edge [fontname="Consolas" dir=both arrowtail=none arrowhead=vee];
+
+    edge [label="Is Hungry?"];
+    "Idle" -> "Hungry"
+
+    edge [label="~"];
+    "Idle" -> "Exploring"
+
+    edge [label="Food Nearby?"];
+    "Hungry" -> "MovingTowardsFood"
+    
+    edge [label="~"];
+    "Hungry" -> "Exploring"
+    
+    edge [label="Destination Reached?"];
+    "Exploring" -> "Idle"
+    
+    edge [label="~"];
+    "Exploring" -> "Exploring"
+    
+    edge [label="~"];
+    "MovingTowardsFood" -> "MovingTowardsFood"
+    
+    edge [label="Destination Reached?"];
+    "MovingTowardsFood" -> "Idle"
+}
+/* dot -Tsvg state_machine.dot -o state_machine.svg */

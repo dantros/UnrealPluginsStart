@@ -1,0 +1,86 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="588pt" height="551pt" viewBox="0.00 0.00 587.95 550.68">
+<g id="graph0" class="graph" transform="translate(3.44268798828125,541.6640930175781) scale(1)" data-name="G">
+
+<!-- Idle -->
+<g id="node1" class="node" pointer-events="visible" data-name="Idle">
+
+<ellipse fill="white" stroke="black" cx="194" cy="-470.68" rx="72" ry="72"/>
+<text text-anchor="middle" x="194" y="-466.48" font-family="Consolas" font-size="14.00">Idle</text>
+</g>
+<!-- Hungry -->
+<g id="node2" class="node" pointer-events="visible" data-name="Hungry">
+
+<ellipse fill="white" stroke="black" cx="316" cy="-273.88" rx="72" ry="72"/>
+<text text-anchor="middle" x="316" y="-269.68" font-family="Consolas" font-size="14.00">Hungry</text>
+</g>
+<!-- Idle&#45;&gt;Hungry -->
+<g id="edge1" class="edge" data-name="Idle-&gt;Hungry">
+
+<path fill="none" stroke="black" d="M231.93,-409.11C244.9,-388.41 259.5,-365.1 272.85,-343.78"/>
+<polygon fill="black" stroke="black" points="278.09,-335.41 276.6,-346.28 275.44,-339.65 272.78,-343.89 272.78,-343.89 272.78,-343.89 275.44,-339.65 268.97,-341.5 278.09,-335.41 278.09,-335.41"/>
+<text text-anchor="middle" x="297.49" y="-368.08" font-family="Consolas" font-size="14.00">Is Hungry?</text>
+</g>
+<!-- Exploring -->
+<g id="node3" class="node" pointer-events="visible" data-name="Exploring">
+
+<ellipse fill="white" stroke="black" cx="72" cy="-74.54" rx="72" ry="72"/>
+<text text-anchor="middle" x="72" y="-70.34" font-family="Consolas" font-size="14.00">Exploring</text>
+</g>
+<!-- Idle&#45;&gt;Exploring -->
+<g id="edge2" class="edge" data-name="Idle-&gt;Exploring">
+
+<path fill="none" stroke="black" d="M127.93,-441.33C91.47,-421.05 51.7,-389.58 42.3,-345.88 28.56,-281.98 38.36,-208.13 50.27,-153.78"/>
+<polygon fill="black" stroke="black" points="52.43,-144.21 54.62,-154.96 51.33,-149.09 50.23,-153.97 50.23,-153.97 50.23,-153.97 51.33,-149.09 45.84,-152.97 52.43,-144.21 52.43,-144.21"/>
+<text text-anchor="middle" x="46.85" y="-269.68" font-family="Consolas" font-size="14.00">~</text>
+</g>
+<!-- MovingTowardsFood -->
+<g id="node4" class="node" pointer-events="visible" data-name="MovingTowardsFood">
+
+<ellipse fill="white" stroke="black" cx="370" cy="-74.54" rx="74.58" ry="74.58"/>
+<text text-anchor="middle" x="370" y="-70.34" font-family="Consolas" font-size="14.00">MovingTowardsFood</text>
+</g><g id="edge4" class="edge" data-name="Hungry-&gt;Exploring" data-comment="MovingTowardsFood">
+
+<path fill="none" stroke="black" d="M261.05,-227.3C250.76,-218.82 240.07,-210.06 230,-201.88 199.1,-176.77 164.58,-149.12 135.71,-126.11"/>
+<polygon fill="black" stroke="black" points="128.11,-120.06 138.74,-122.77 132.02,-123.17 135.93,-126.29 135.93,-126.29 135.93,-126.29 132.02,-123.17 133.13,-129.81 128.11,-120.06 128.11,-120.06"/>
+<text text-anchor="middle" x="208.85" y="-171.28" font-family="Consolas" font-size="14.00">~</text>
+</g>
+<!-- MovingTowardsFood&#45;&gt;Idle -->
+<g id="edge8" class="edge" data-name="MovingTowardsFood-&gt;Idle">
+
+<path fill="none" stroke="black" d="M402.76,-141.99C405.72,-150.27 408.26,-158.76 410,-167.08 426.3,-245.07 438.74,-278.01 397,-345.88 368.58,-392.1 315.82,-423.49 271.22,-443.1"/>
+<polygon fill="black" stroke="black" points="262.13,-446.99 269.55,-438.92 266.72,-445.02 271.32,-443.06 271.32,-443.06 271.32,-443.06 266.72,-445.02 273.09,-447.2 262.13,-446.99 262.13,-446.99"/>
+<text text-anchor="middle" x="502.97" y="-269.68" font-family="Consolas" font-size="14.00">Destination Reached?</text>
+</g>
+<!-- MovingTowardsFood&#45;&gt;MovingTowardsFood -->
+<g id="edge7" class="edge" data-name="MovingTowardsFood-&gt;MovingTowardsFood">
+
+<path fill="none" stroke="black" d="M442.93,-91.97C454.57,-89.42 462.54,-83.61 462.54,-74.54 462.54,-68.16 458.6,-63.4 452.22,-60.24"/>
+<polygon fill="black" stroke="black" points="442.93,-57.11 453.85,-56.05 447.67,-58.71 452.41,-60.31 452.41,-60.31 452.41,-60.31 447.67,-58.71 450.97,-64.57 442.93,-57.11 442.93,-57.11"/>
+<text text-anchor="middle" x="466.39" y="-70.34" font-family="Consolas" font-size="14.00">~</text>
+</g>
+<!-- Hungry&#45;&gt;MovingTowardsFood -->
+<g id="edge3" class="edge" data-name="Hungry-&gt;MovingTowardsFood">
+
+<path fill="none" stroke="black" d="M312.2,-201.62C312.97,-189.93 314.62,-178.07 317.63,-167.08 319.56,-160.07 322.14,-153.02 325.14,-146.13"/>
+<polygon fill="black" stroke="black" points="329.14,-137.5 329.02,-148.46 327.04,-142.03 324.94,-146.57 324.94,-146.57 324.94,-146.57 327.04,-142.03 320.86,-144.68 329.14,-137.5 329.14,-137.5"/>
+<text text-anchor="middle" x="364.18" y="-171.28" font-family="Consolas" font-size="14.00">Food Nearby?</text>
+</g>
+<!-- Hungry&#45;&gt;Exploring -->
+
+<!-- Exploring&#45;&gt;Idle -->
+<g id="edge5" class="edge" data-name="Exploring-&gt;Idle">
+
+<path fill="none" stroke="black" d="M61.37,-146.06C55.91,-202.29 55.03,-281.94 81.05,-345.88 91.99,-372.76 111.55,-397.48 131.36,-417.66"/>
+<polygon fill="black" stroke="black" points="138.36,-424.6 128.09,-420.75 134.81,-421.08 131.26,-417.56 131.26,-417.56 131.26,-417.56 134.81,-421.08 134.42,-414.36 138.36,-424.6 138.36,-424.6"/>
+<text text-anchor="middle" x="158.97" y="-269.68" font-family="Consolas" font-size="14.00">Destination Reached?</text>
+</g>
+<!-- Exploring&#45;&gt;Exploring -->
+<g id="edge6" class="edge" data-name="Exploring-&gt;Exploring">
+
+<path fill="none" stroke="black" d="M142.19,-92.13C153.91,-89.67 162,-83.81 162,-74.54 162,-68.03 158,-63.19 151.55,-60.04"/>
+<polygon fill="black" stroke="black" points="142.19,-56.95 153.09,-55.81 146.93,-58.52 151.68,-60.08 151.68,-60.08 151.68,-60.08 146.93,-58.52 150.27,-64.36 142.19,-56.95 142.19,-56.95"/>
+<text text-anchor="middle" x="165.85" y="-70.34" font-family="Consolas" font-size="14.00">~</text>
+</g>
+</g>
+</svg>
