@@ -21,7 +21,7 @@ This is a tutorial code aiming to show you how to work with the following:
 
 ![logo](UnrealPluginsStart.png "logo")
 
-In this world, there are Cakes and there are Monsters. Both of them are striving to survive in this delicious world. they have slightly different stats. But the thing is, if they are hungre, they need to eat. Their behavior is implemented as the following state machine:
+In this world, there are Cakes and there are Monsters. Both of them are striving to survive in this delicious world. they have slightly different stats. But the thing is, if they are hungry, they need to eat. Their behavior is implemented as the following state machine:
 
 ![state_machine](NonUnrealFiles/state_machine.svg "state_machine")
 
