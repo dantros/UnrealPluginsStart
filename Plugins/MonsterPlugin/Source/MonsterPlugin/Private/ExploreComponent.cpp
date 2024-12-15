@@ -13,17 +13,7 @@ UExploreComponent::UExploreComponent()
 	Speed = 100.f;
 }
 
-void UExploreComponent::BeginPlay()
-{
-	Super::BeginPlay();
-}
-
-void UExploreComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
-{
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-}
-
-const FVector& UExploreComponent::GenerateDestination()
+FVector UExploreComponent::GetRandomLocationInArea() const
 {
 	TArray<AActor*> Actors;
 	Actors.Add(GameVolume);
@@ -34,7 +24,26 @@ const FVector& UExploreComponent::GenerateDestination()
 	const FVector MaxCorner = Center + BoxExtent / 2.f;
 	const float RandomX = FMath::RandRange(MinCorner.X, MaxCorner.X);
 	const float RandomY = FMath::RandRange(MinCorner.Y, MaxCorner.Y);
-	FVector NewDestination = FVector(RandomX, RandomY, 0.f);
+	return FVector(RandomX, RandomY, 0.f);
+}
+
+void UExploreComponent::BeginPlay()
+{
+	Super::BeginPlay();
+
+	FVector RandomStartLocation = GetRandomLocationInArea();
+	AActor* Owner = GetOwner();
+	Owner->SetActorLocation(RandomStartLocation);
+}
+
+void UExploreComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+{
+	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+}
+
+const FVector& UExploreComponent::GenerateDestination()
+{
+	FVector NewDestination = GetRandomLocationInArea();
 
 	AActor* Owner = GetOwner();
 	FVector OwnerLocation = Owner->GetActorLocation();

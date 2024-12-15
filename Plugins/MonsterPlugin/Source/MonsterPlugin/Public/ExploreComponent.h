@@ -47,4 +47,7 @@ public:
 	bool DestinationReached() const;
 
 	void Walk(float DeltaTime);
+
+private:
+	FVector GetRandomLocationInArea() const;
 };
