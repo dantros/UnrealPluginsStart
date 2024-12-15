@@ -29,6 +29,11 @@ In this world, there are Cakes and there are Monsters. Both of them are striving
 
 Well, it does not handle user inputs, however, the starting position of the monsters are randomized. So it is a mistery who would survive starvation first. The real game is in front of the screen, where you can gamble anything. Let us say, who do the dishes, a beer, a car, or even a delicious cake. Posibilities are endless, it is your call.
 
+## About Git-LFS
+
+To make this repository publicly available on Github, it is not possible to use Git-LFS. Consider renaming .gitattributes_off to .gitattributes and properly setup Git-LFS as explained at https://git-lfs.com/.
+You may be required to remove and re-add files with the extension .uasset and .umap.
+
 ## Art?
 
 The assets used in this demo were handpicked from the following free gorgeous asset packs. My sincere thanks to the original authors!.
@@ -36,6 +41,6 @@ The assets used in this demo were handpicked from the following free gorgeous as
 - https://ghostpixxells.itch.io/pixelfood
 - https://holder-anibat.itch.io/holders-animated-battlers-free-enemies-pack-1
 
-## Ok, cool, but I learn better with a video.
+## Ok, cool, but I learn better with a video ...
 
 Sure!, a video is in the works, check out my YouTube channel: https://www.youtube.com/@4druntime
